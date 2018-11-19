@@ -1,0 +1,96 @@
+//Tag's html
+
+	var enderecos = document.createElement("endereco");
+	var contas = document.createElement("contas");
+	var quitadas = document.createElement("quitadas");
+
+
+//INSERT endereco INTO (idendereco,UF,cidade,bairro,rua,numero) VALUES ();
+console.log("#Tabela  endereco")
+enderecos.innerHTML="#Tabela endereco<br>"
+	id=0;
+	UF="MG"
+	cidade=["Arcos","Formiga","Corrego Fundo","Pains"]
+	numero=0;
+	rua= ["São João de Capistrano", "São João de Deus", "São João Eudes", "São João Evangelista", "São João José da Cruz", "São João Maria Vianney", "São João Nepomuceno", "João Paulo II", "São João Roberts", "Santos Jonas e Barachiso", "São Jorge", "São Josafa Kuncewicz", "São José", "São José Benedito Cotolengo", "São José Cafasso", "São José de Anchieta", "São José de Cupertino", "São José Moscati", "Santa Josefina", "São Josemaria Escrivá de Balaguer", "São Juan Diego Cuauhtlatoatzin", "São Judas Tadeu", "Santa Júlia", "Santa Júlia Billiart", "Santa Júlia Salzano", "Santa Juliana", "Santos Julita e Ciro", "Nossa Senhora das Lágrimas", "Nossa Senhora Lampadosa", "Santa Larissa", "Beata Laura Vicuña", "Beata Lavínia Sernardi", "São Lázaro", "São Leandro", "São Leão I, o Magno Papa", "Santa Léia", "São Leonardo de Noblac", "São Leonardo de Porto Maurício", "São Leonardo Murialdo", "São Leopoldo Mandic", "Santa Letícia", "Nossa Senhora da Libertação", "Santa Lídia", "Santa Liduína", "Santa Lívia", "São Longuinho", "Nossa Senhora de Loreto", "Nossa Senhora de Lourdes", "São Lourenço", "São Lourenço de Brindisi", "São Lucas", "São Ludgero", "São Luís Gonzaga", "São Luís Orione", "Santa Luísa de Marillac", "Nossa Senhora da Luz", "Santa Luzia", "São Macário", "Santa Madalena de Canossa", "Santa Madre Paulina", "Madre Tereza", "Nossa Senhora Mãe da Divina Providência", "Nossa Senhora Mãe de Deus", "Mãe Peregrina", "Santa Mafalda", "Santa Manuela Torres Acosta", "Mãos Ensanguentadas", "São Marcelino de Cartago", "São Marcelo I", "São Marcos Evangelista", "Santa Margarida de Cortona", "Santa Maria", "Maria Auxiliadora", "Santa Maria de Cléofas", "Beata Maria Gabriella da Unidade", "Santa Maria Goretti", "Santa Maria Josefa Rossello", "Santa Maria Josefina do Coração de Jesus", "Santa Maria Madalena", "Santa Maria Micaela", "Bem Aventurada Maria Restituta", "Maria Santíssima", "Santa Mariana", "Santa Marina", "Santa Marta Irmã de Lázaro", "São Martinho de Tours", "São Martiniano", "Os primeiros mártires da Igreja Romana", "São Matheus", "São Matias Apóstolo", "Santa Matilde", "São Maximiliano Maria Kolbe", "Medalha Ágape", "Medalha de São Bento", "Medalha Milagrosa", "Nossa Senhora Medianeira", "Santa Melissa", "Menina Izildinha", "Menino Jesus de Praga", "Nossa Senhora das Mercês", "São Miguel Arcanjo", "Nossa Senhora dos Milagres", "Nossa Senhora da Misericórdia", "São Mizael", "Santa Monica", "São Narciso", "Nascimento de Jesus", "Nossa Senhora da Natividade", "Nossa Senhora dos Navegantes", "Nossa Senhora Nazaré", "São Nicéforo", "São Nicolau", "São Nicolau de Flue", "Santa Nicole", "São Norberto", "Nossa Senhora do Ó", "Santa Odilia", "Santa Olga", "Santo Oliver Plunkett", "Santo Onésimo", "São Pacômio", "Nossa Senhora da Paixão", "São Pancrácio", "Papa Francisco", "Santa Patrícia", "São Patrício", "Santa Paula de Roma", "Santa Paula Frassinetti", "São Paulo", "São Paulo da Cruz", "Santo Paulo Miki e Companheiros Mártires", "Nossa Senhora da Paz", "São Pedro","Santa Jacinta de Mariscotti", "São Januário", "São Jerônimo", "Jesus Crucificado", "Jesus Misericordioso", "Santa Joana D Arc", "São João Batista", "São João Batista de La Salle", "São João Batista de Rossi", "São João Câncio", "Santo João Clímaco", "São João da Cruz", "São João de Brito"]
+	
+	
+	for(i=1;i<=30;i++){
+		
+		indiceRua=Math.floor(Math.random() *10 *(rua.length))%rua.length
+		indiceCidade=Math.floor(Math.random() *10 *(cidade.length))%cidade.length
+		switch(indiceCidade){
+			case 0://Formiga
+				bairro=["Alto Praia", "Alvorada", "Andorinhas", "Anel Rodoviário", "Areias Brancas", "Bela Vista", "Campus Universitário", "Centro", "Cidade Nova", "Cidade Serra", "Condomínio Village", "Coronel Balbino José Sil", "Delegado Rei", "Eldorado", "Engenho Serra", "Formiga", "Industrial", "Jardim Alvorada", "Jardim América", "Leal", "Mangabeiras", "Maringá", "Náutico", "Nossa Senhora Aparecida", "Nossa Senhora Lourdes", "Nova Vista", "Novo Horizonte", "Novo Santo Antônio", "Oliveiras", "Ouro Negro", "Ouro Verde", "Palmeiras", "Planalto", "Por Sol", "Quarteis", "Quinzinho", "Recanto Praia", "Rosa Mística", "Rosário", "Sagrado C Jesus", "Santa Luzia", "Santo Antônio", "São Geraldo", "São Luiz", "São Vicente", "Saudade", "Vau Nunes", "Vila Carmelita"]
+				break;
+			case 1://Arcos
+				bairro=["Alvorada", "Arcos", "Barreiro", "Bela Vista", "Belvedere", "Boa Vista", "Boca da Mata", "Brasília", "Buritis", "Calciolandia", "Calcita", "Calcita", "Centro", "Cidade Esperança I", "Cidade Ind Poço Hilda B Andrade", "Cidade Nova", "Córrego das Almas", "Cruzeiro", "Distrito Ind I", "Distrito Ind II", "Distrito Industrial", "Distrito Industrial I", "Distrito Industrial Ii", "Eldorado", "Esperança I", "Esplanada", "Floresta", "Ilha", "Ilha- Zona Rural", "Industrial Ii", "Jardim Bela Vista", "Jardim Esplanada", "Juca Dias", "Limeira", "Lourdes", "Macedos", "Mangabeiras", "N Sra Carmo", "Niterói", "Nossa Senhora Aparecida", "Nossa Senhora Carmo", "Nossa Senhora do Carmo", "Nova Morada", "Nova Morada II", "Novo Horizonte", "Novo São Judas Tadeu", "Novo Sion", "Olaria", "Oliveiras", "Oto Maia", "Perimetro Urbano", "Planalto", "Planalto Ii", "Residencial Califórnia", "Retiro São José", "S José", "S Judas", "S Judas Tadeu", "S Pedro", "S Vicente", "Santa Cruz", "Santa Efigênia", "Santo Antônio", "São José", "São Judas", "São Judas Tadeu", "São Pedro", "São Vicente", "Sion", "Sol Nascente", "Trajano Faria", "Vila Boa Vista", "Vila Calcita", "Vila Calctia", "Zona Rural"]
+				break;
+			case 2://Corrego Fundo
+				bairro=["Amazonas", "Bairro Amazonas", "Bairro Bom Pastor", "Bairro Floresta", "Bairro Florestas", "Bairro Mizael Bernardes", "Bairro Santa Tereza", "Bela Vista", "Bom Pastor", "Centro", "Cofu Bxo", "Córrego Fundo de Baixo", "Córrego Fundo do Meio", "Crg Fd", "Crg Fundo do Meio", "Crg Fundo Meio", "Falhas", "Localidade de Bela Vista", "Mizael Bernardes", "Perimetro Urbano", "Santa Tereza", "Sítio Boa Vista de Córrego Fundo", "Sobradinho", "Zona Industrial Localizada", "Zona Rural"]
+				break;
+			case 3://Pains
+				bairro=["Alvorada", "Capoeirão", "Centro", "Corumbá Pains", "Distrito da Mina", "Imidinho", "José Bonifácio", "Mina", "Pains", "Residencial Maria Beralda", "Rocinha Recreio", "Sumidouro", "Vassouras", "Vila Costina", "Vila Crispim", "Zona Rural"]
+				break;
+		}
+		indiceBairro=Math.floor(Math.random() *10 *(bairro.length))%bairro.length
+		numero=Math.floor((Math.random()*1234 %1000))
+		console.log("INSERT INTO Cursinho.endereco (idendereco,UF,cidade,bairro,rua,numero) VALUES ("+id+",'"+UF+"','"+cidade[indiceCidade]+"','"+bairro[indiceBairro]+"','"+rua[indiceRua]+"',"+numero+");")
+		enderecos.innerHTML+="INSERT INTO Cursinho.endereco (idendereco,UF,cidade,bairro,rua,numero) VALUES ("+id+",'"+UF+"','"+cidade[indiceCidade]+"','"+bairro[indiceBairro]+"','"+rua[indiceRua]+"',"+numero+");"+"<br>"
+
+		id++
+	}
+	enderecos.innerHTML+="<br>"
+
+//INSERT INTO Cursinho.contas_A_pagar  (idcontas_A_pagar,valorTotal,qtdParcelas,aluno_idaluno) VALUES ();
+console.log("#Tabela contas_A_pagar")
+contas.innerHTML="#Tabela contas_A_pagar<br>"
+	pm=199.99
+	vestibular=499.99
+	bombeiro=199.99
+	valor=[pm,vestibular,bombeiro];
+	alunoXcurso=[3,2,1,1,2,3,2,1,1,2,3,3,2,1,1,2,3,3,2,1]
+
+	parcelas=[]
+
+	for(id=1;id<=20;id++){
+		parcelas.push(Math.floor(Math.random()*10)%12+1);
+		console.log("INSERT INTO Cursinho.contas_A_pagar  (idcontas_A_pagar,valorTotal,qtdParcelas,aluno_idaluno) VALUES ("+id+","+valor[alunoXcurso[id-1]-1]+","+parcelas[id-1]+","+id+");")
+		contas.innerHTML+="INSERT INTO Cursinho.contas_A_pagar  (idcontas_A_pagar,valorTotal,qtdParcelas,aluno_idaluno) VALUES ("+id+","+valor[alunoXcurso[id-1]-1]+","+parcelas[id-1]+","+id+");"+"<br>";
+	}
+	contas.innerHTML+="<br>"
+
+//INSERT INTO Cursinho.quitada  (idpagamento,contas_A_pagar_idcontas_A_pagar,valor,data,tipo_Pagamento) VALUES ();
+console.log("#Tabela quitada")
+quitadas.innerHTML="#Tabela quitada<br>"
+	//parcelas veio de contas a pagar
+	TipoPagamento=["Dinheiro","Debito","Credito","Cheque"];
+	contador=1;
+	for(i=0;i<parcelas.length;i++){
+		for(j=1;j<=parcelas[i];j++){
+			//Data de pagamento parcela ANO-MES-DIA
+			data=""+2018+"-";
+			if(parcelas[i]+1-j<10){
+				data+="0"
+			}
+			data+=parcelas[i]+1-j;
+			data+="-06";
+
+			nTipo=Math.floor((Math.random()*1000)%4);
+			console.log("INSERT INTO Cursinho.quitada  (idpagamento,contas_A_pagar_idcontas_A_pagar,valor,data,tipo_Pagamento) VALUES ("+contador+","+(i+1)+","+(valor[alunoXcurso[i]-1]/parcelas[i]).toFixed(2)+","+data+",'"+TipoPagamento[nTipo]+"');")
+			quitadas.innerHTML+="INSERT INTO Cursinho.quitada  (idpagamento,contas_A_pagar_idcontas_A_pagar,valor,data,tipo_Pagamento) VALUES ("+contador+","+(i+1)+","+(valor[alunoXcurso[i]-1]/parcelas[i]).toFixed(2)+","+data+",'"+TipoPagamento[nTipo]+"');"+"<br>";
+			contador++
+		}
+	}
+
+
+
+
+
+
+
+//Insere na pagina
+document.body.innerHTML=""
+document.body.appendChild(enderecos);
+document.body.appendChild(contas);
+document.body.appendChild(quitadas);
