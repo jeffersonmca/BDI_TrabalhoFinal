@@ -1,0 +1,37 @@
+NO MÍNIMO 8 TABELAS PARA CADA SISTEMA.
+
+Trabalho em trio,
+
+O trabalho consiste em Planejar, desenvolver e criar uma estrutura de banco de dados robusta e técnica para o mundo real.
+O aluno deve escolher uma empresa do mundo real, observar um problema a ser resolvido através de um software e modelar todo um banco de dados para tal.
+
+Alguns segmentos que podem ser escolhidos:
+-Sistema para um Supermercado
+-Sistema para Controle de Vendas
+-Sistema para Controle de Biblioteca
+-Sistema para uma Pusada
+-Sistema para uma Escola
+-Sistema para uma Universidade
+-Sistema para uma Clínica Médica
+-Sistema para um Posto de Gasolina
+-Sistema para Votação
+-Sistema para Controle de Alunos da Assistência Estudantil
+-Sistema de Controle de Academina
+-Sistema para um Laboratório de Química
+-Sistema para um Laboratório de Física
+-Sistema para controle de projetos de iniciação e aplicados
+
+Deve se entregue impresso:
+Uma análise de requisitos ou briefing (para, na correção, ter uma noção do escopo)
+
+Diagrama de casos de uso;
+-Um modelo Conceitual(referência Machado)
+-Um modelo Lógico(normalizado)
+-Um dicionário de dados(dados do modelo lógico normalizado)
+-Instruções SQL de criação da base de dados(create e alter), observando recursos demonstrados em sala de aula;
+-Instruções SQL para manipulação de dados, no mínimo 3 para cada tipo.
+-10 consultas sql de relevância para relatórios(com recursos expostos em sala de aula)
+
+Deve ser entregue por email(fernando.lima@ifmg.edu.br):
+-Um documento em pdf contendo todo o documento entregue impresso;
+-Um bkp em sql do banco de dados. sua estrutura e dados, pelo menos 5 registros por tabela.
