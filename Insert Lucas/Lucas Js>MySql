@@ -8,7 +8,6 @@
 //INSERT endereco INTO (idendereco,UF,cidade,bairro,rua,numero) VALUES ();
 console.log("#Tabela  endereco")
 enderecos.innerHTML="#Tabela endereco<br>"
-	id=0;
 	UF="MG"
 	cidade=["Arcos","Formiga","Corrego Fundo","Pains"]
 	numero=0;
@@ -35,10 +34,8 @@ enderecos.innerHTML="#Tabela endereco<br>"
 		}
 		indiceBairro=Math.floor(Math.random() *10 *(bairro.length))%bairro.length
 		numero=Math.floor((Math.random()*1234 %1000))
-		console.log("INSERT INTO Cursinho.endereco (idendereco,UF,cidade,bairro,rua,numero) VALUES ("+id+",'"+UF+"','"+cidade[indiceCidade]+"','"+bairro[indiceBairro]+"','"+rua[indiceRua]+"',"+numero+");")
-		enderecos.innerHTML+="INSERT INTO Cursinho.endereco (idendereco,UF,cidade,bairro,rua,numero) VALUES ("+id+",'"+UF+"','"+cidade[indiceCidade]+"','"+bairro[indiceBairro]+"','"+rua[indiceRua]+"',"+numero+");"+"<br>"
-
-		id++
+		console.log("INSERT INTO Cursinho.endereco (idendereco,UF,cidade,bairro,rua,numero) VALUES ("+i+",'"+UF+"','"+cidade[indiceCidade]+"','"+bairro[indiceBairro]+"','"+rua[indiceRua]+"',"+numero+");")
+		enderecos.innerHTML+="INSERT INTO Cursinho.endereco (idendereco,UF,cidade,bairro,rua,numero) VALUES ("+i+",'"+UF+"','"+cidade[indiceCidade]+"','"+bairro[indiceBairro]+"','"+rua[indiceRua]+"',"+numero+");"+"<br>"
 	}
 	enderecos.innerHTML+="<br>"
 
@@ -60,7 +57,7 @@ contas.innerHTML="#Tabela contas_A_pagar<br>"
 	}
 	contas.innerHTML+="<br>"
 
-//INSERT INTO Cursinho.quitada  (idpagamento,contas_A_pagar_idcontas_A_pagar,valor,data,tipo_Pagamento) VALUES ();
+//INSERT INTO Cursinho.quitada  (idpagamento,contas_A_pagar_idcontas_A_pagar,valor,data,tipo_pagamento) VALUES ();
 console.log("#Tabela quitada")
 quitadas.innerHTML="#Tabela quitada<br>"
 	//parcelas veio de contas a pagar
@@ -77,8 +74,8 @@ quitadas.innerHTML="#Tabela quitada<br>"
 			data+="-06";
 
 			nTipo=Math.floor((Math.random()*1000)%4);
-			console.log("INSERT INTO Cursinho.quitada  (idpagamento,contas_A_pagar_idcontas_A_pagar,valor,data,tipo_Pagamento) VALUES ("+contador+","+(i+1)+","+(valor[alunoXcurso[i]-1]/parcelas[i]).toFixed(2)+","+data+",'"+TipoPagamento[nTipo]+"');")
-			quitadas.innerHTML+="INSERT INTO Cursinho.quitada  (idpagamento,contas_A_pagar_idcontas_A_pagar,valor,data,tipo_Pagamento) VALUES ("+contador+","+(i+1)+","+(valor[alunoXcurso[i]-1]/parcelas[i]).toFixed(2)+","+data+",'"+TipoPagamento[nTipo]+"');"+"<br>";
+			console.log("INSERT INTO Cursinho.quitada  (idpagamento,contas_A_pagar_idcontas_A_pagar,valor,data,tipo_pagamento) VALUES ("+contador+","+(i+1)+","+(valor[alunoXcurso[i]-1]/parcelas[i]).toFixed(2)+","+data+",'"+TipoPagamento[nTipo]+"');")
+			quitadas.innerHTML+="INSERT INTO Cursinho.quitada  (idpagamento,contas_A_pagar_idcontas_A_pagar,valor,data,tipo_pagamento) VALUES ("+contador+","+(i+1)+","+(valor[alunoXcurso[i]-1]/parcelas[i]).toFixed(2)+","+data+",'"+TipoPagamento[nTipo]+"');"+"<br>";
 			contador++
 		}
 	}
