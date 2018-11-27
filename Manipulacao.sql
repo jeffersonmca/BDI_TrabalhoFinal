@@ -10,6 +10,14 @@ UPDATE Cursinho.endereco
 SET UF = 'sp'
 WHERE UF='SP';
 
+UPDATE Cursinho.endereco
+SET UF = 'rj'
+WHERE UF='SP';
+
+UPDATE Cursinho.endereco
+SET UF = 'RJ'
+WHERE UF='rj';
+
 delete from Cursinho.endereco
 where UF != 'MG';
 
@@ -21,7 +29,7 @@ SET qtdParcelas = -1
 WHERE qtdParcelas = 0;
 
 delete from Cursinho.contas_A_pagar
-where qtdParcelas == -1;
+where qtdParcelas <=0;
 
 #=======================        quitada      ======================
 
