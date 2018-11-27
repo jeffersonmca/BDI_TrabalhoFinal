@@ -147,3 +147,48 @@ where aluno_idaluno = 6 AND curso_idcurso = 2 AND dataIngresso AND dataIngresso 
 
 delete from aluno_curso
 where aluno_idaluno = 7 AND curso_idcurso = 1 AND dataIngresso AND dataIngresso = '2018-02-13';
+
+#Insert da tabela pessoa
+INSERT INTO Cursinho.pessoa (idpessoa,CPF,nome,sobrenome,dtNascimento,sexo,endereco_idendereco) VALUES (31,'12345678909','Thales','Henrique','1996-09-14','M',1);
+INSERT INTO Cursinho.pessoa (idpessoa,CPF,nome,sobrenome,dtNascimento,sexo,endereco_idendereco) VALUES (32,'33333333333','Gabriela','Marques','1995-10-23','F',2);
+INSERT INTO Cursinho.pessoa (idpessoa,CPF,nome,sobrenome,dtNascimento,sexo,endereco_idendereco) VALUES (33,'11111111111','Lucas','Mateus','1999-03-08','M',3);
+
+#Insert da tabela cargo
+INSERT INTO Cursinho.cargo(idCargo,nome,salario) VALUES(4,"Segurança",954);
+INSERT INTO Cursinho.cargo(idCargo,nome,salario) VALUES(5,"Porteiro",954);
+INSERT INTO Cursinho.cargo(idCargo,nome,salario) VALUES(6,"Bibliotecario",1290);
+
+#Insert da tabela funcionarios
+INSERT INTO Cursinho.funcionario(idFuncionario,cargaHoraria,pessoa_idpessoa,cargo_idCargo) VALUES (11,40,31,4);
+INSERT INTO Cursinho.funcionario(idFuncionario,cargaHoraria,pessoa_idpessoa,cargo_idCargo) VALUES (12,40,32,5);
+INSERT INTO Cursinho.funcionario(idFuncionario,cargaHoraria,pessoa_idpessoa,cargo_idCargo) VALUES (13,40,33,6);
+
+#Update da tabela pessoa
+UPDATE Cursinho.pessoa SET nome="Rafael",sexo='M' WHERE idpessoa=32;
+UPDATE Cursinho.pessoa SET nome="Gabriela",sexo='F' WHERE idpessoa=31;
+UPDATE Cursinho.pessoa SET cpf="22222222222" WHERE idpessoa=33;
+
+#Update da tabela cargo
+UPDATE Cursinho.cargo SET salario=1000 WHERE idCargo=4;
+UPDATE Cursinho.cargo SET salario=850 WHERE idCargo=5;
+UPDATE Cursinho.cargo SET nome="Publicitario",salario=1200 WHERE idCargo=6;
+
+#Update da tabela funcionarios
+UPDATE Cursinho.funcionario SET cargaHoraria=22 WHERE idFuncionario=13;
+UPDATE Cursinho.funcionario SET cargaHoraria=48 WHERE idFuncionario=11;
+UPDATE Cursinho.funcionario SET cargaHoraria=45 WHERE idFuncionario=12;
+
+#Delete da tabela pessoa
+DELETE FROM Cursinho.pessoa WHERE idpessoa=31;
+DELETE FROM Cursinho.pessoa WHERE idpessoa=32;
+DELETE FROM Cursinho.pessoa WHERE idpessoa=33;
+
+#Delete da tabela cargo
+DELETE FROM Cursinho.cargo WHERE idCargo=4;
+DELETE FROM Cursinho.cargo WHERE idCargo=5;
+DELETE FROM Cursinho.cargo WHERE idCargo=6;
+
+#Delete da tabela funcionarios
+DELETE FROM Cursinho.funcionario WHERE idFuncionario=11;
+DELETE FROM Cursinho.funcionario WHERE idFuncionario=12;
+DELETE FROM Cursinho.funcionario WHERE idFuncionario=13;
