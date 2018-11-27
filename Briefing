@@ -1,0 +1,18 @@
+Integrantes:
+			->Lucas Mateus Fernandes
+			->Jefferson Marques Costa Alves
+			->Paulo Henrique Xavier
+			->Gabriel Henrique 
+
+O presente trabalho tem como escopo uma organização que oferta cursos preparatórios para a população de formiga e região, A regra de negócio que rege este trabalho é estabelecida com os seguintes pricípios.
+	
+
+O estabelecimento possui diferentes cargos com salários base ja estabelecidos porem funcionários que atuam no mesmo cargo podem receber salários diferentes dependendo da experiencia, e da quantidade de aula trabalhada.
+
+Cada Turma é fechada com um curso específico, e seus respectivos alunos alem de ter funcionários vinculados a turma porem os funcionários podem trabalhar em mais de uma turma do mesmo modo que os alunos podem realizar outros cursos
+
+Para questão do marketing é importante saber qual o endereço de cada aluno para indicar o cursos preparatorios de concursos da prefeitural local, alem de ter a idade e o genero para saber se é viavel algum concurso militar ou outro do tipo
+
+É importante manter o endereço para a entrega dos boletos a pagar
+
+No ato da compra é estabelecido o valor total e quantidade de parcelas, é importante guardar a data de pagamento de cada parcela com o respectibo valor e o tipo de pagamento.
