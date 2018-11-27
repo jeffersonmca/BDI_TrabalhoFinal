@@ -28,12 +28,28 @@ UPDATE Cursinho.contas_A_pagar
 SET qtdParcelas = -1
 WHERE qtdParcelas = 0;
 
+UPDATE Cursinho.contas_A_pagar
+SET qtdParcelas = -2
+WHERE qtdParcelas = -1;
+
+UPDATE Cursinho.contas_A_pagar
+SET qtdParcelas = 0
+WHERE qtdParcelas = -2;
+
 delete from Cursinho.contas_A_pagar
-where qtdParcelas <=0;
+where qtdParcelas <= 0;
 
 #=======================        quitada      ======================
 
 INSERT INTO Cursinho.quitada (idpagamento,contas_A_pagar_idcontas_A_pagar,valor,data,tipo_pagamento) VALUES (999,1,28.57,'2019-01-01','Avista');
+
+UPDATE Cursinho.quitada
+SET tipo_pagamento = 'Prazo'
+WHERE tipo_pagamento='Avista';
+
+UPDATE Cursinho.quitada
+SET tipo_pagamento = 'Avista'
+WHERE tipo_pagamento='Prazo';
 
 UPDATE Cursinho.quitada
 SET tipo_pagamento = 'Prazo'
