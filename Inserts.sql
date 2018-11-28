@@ -73,16 +73,16 @@ INSERT INTO Cursinho.cargo(idCargo,nome,salario) VALUES(3,"Secretário",1290);
 
 #Tabela de funcionarios
 
-INSERT INTO Cursinho.funcionario(idFuncionario,cargaHoraria,pessoa_idpessoa,cargo_idCargo) VALUES (1,40,21,1);
-INSERT INTO Cursinho.funcionario(idFuncionario,cargaHoraria,pessoa_idpessoa,cargo_idCargo) VALUES (2,40,22,1);
-INSERT INTO Cursinho.funcionario(idFuncionario,cargaHoraria,pessoa_idpessoa,cargo_idCargo) VALUES (3,40,23,1);
-INSERT INTO Cursinho.funcionario(idFuncionario,cargaHoraria,pessoa_idpessoa,cargo_idCargo) VALUES (4,40,24,1);
-INSERT INTO Cursinho.funcionario(idFuncionario,cargaHoraria,pessoa_idpessoa,cargo_idCargo) VALUES (5,40,25,1);
-INSERT INTO Cursinho.funcionario(idFuncionario,cargaHoraria,pessoa_idpessoa,cargo_idCargo) VALUES (6,40,26,1);
-INSERT INTO Cursinho.funcionario(idFuncionario,cargaHoraria,pessoa_idpessoa,cargo_idCargo) VALUES (7,40,27,1);
-INSERT INTO Cursinho.funcionario(idFuncionario,cargaHoraria,pessoa_idpessoa,cargo_idCargo) VALUES (8,40,28,2);
-INSERT INTO Cursinho.funcionario(idFuncionario,cargaHoraria,pessoa_idpessoa,cargo_idCargo) VALUES (9,40,29,2);
-INSERT INTO Cursinho.funcionario(idFuncionario,cargaHoraria,pessoa_idpessoa,cargo_idCargo) VALUES (10,44,30,3);
+INSERT INTO Cursinho.funcionario(idFuncionario,bonus,cargaHoraria,pessoa_idpessoa,cargo_idCargo) VALUES (1,0,40,21,1);
+INSERT INTO Cursinho.funcionario(idFuncionario,bonus,cargaHoraria,pessoa_idpessoa,cargo_idCargo) VALUES (2,0,40,22,1);
+INSERT INTO Cursinho.funcionario(idFuncionario,bonus,cargaHoraria,pessoa_idpessoa,cargo_idCargo) VALUES (3,0,40,23,1);
+INSERT INTO Cursinho.funcionario(idFuncionario,bonus,cargaHoraria,pessoa_idpessoa,cargo_idCargo) VALUES (4,0,40,24,1);
+INSERT INTO Cursinho.funcionario(idFuncionario,bonus,cargaHoraria,pessoa_idpessoa,cargo_idCargo) VALUES (5,0,40,25,1);
+INSERT INTO Cursinho.funcionario(idFuncionario,bonus,cargaHoraria,pessoa_idpessoa,cargo_idCargo) VALUES (6,0,40,26,1);
+INSERT INTO Cursinho.funcionario(idFuncionario,bonus,cargaHoraria,pessoa_idpessoa,cargo_idCargo) VALUES (7,0,40,27,1);
+INSERT INTO Cursinho.funcionario(idFuncionario,bonus,cargaHoraria,pessoa_idpessoa,cargo_idCargo) VALUES (8,0,40,28,2);
+INSERT INTO Cursinho.funcionario(idFuncionario,bonus,cargaHoraria,pessoa_idpessoa,cargo_idCargo) VALUES (9,0,40,29,2);
+INSERT INTO Cursinho.funcionario(idFuncionario,bonus,cargaHoraria,pessoa_idpessoa,cargo_idCargo) VALUES (10,0,44,30,3);
 
 
 #Tabela Aluno
@@ -279,7 +279,26 @@ INSERT INTO Cursinho.turma(idturma,curso_idcurso) VALUES(6,2);
 
 
 #Tabela N pra N entre aluno e turma
--- INSERT INTO Cursinho.aluno_turma(aluno_idaluno,turma_idturma) VALUES();
+INSERT INTO Cursinho.aluno_turma(aluno_idaluno,turma_idturma) VALUES(1,5);
+INSERT INTO Cursinho.aluno_turma(aluno_idaluno,turma_idturma) VALUES(2,4);
+INSERT INTO Cursinho.aluno_turma(aluno_idaluno,turma_idturma) VALUES(3,3);
+INSERT INTO Cursinho.aluno_turma(aluno_idaluno,turma_idturma) VALUES(4,3);
+INSERT INTO Cursinho.aluno_turma(aluno_idaluno,turma_idturma) VALUES(5,4);
+INSERT INTO Cursinho.aluno_turma(aluno_idaluno,turma_idturma) VALUES(6,5);
+INSERT INTO Cursinho.aluno_turma(aluno_idaluno,turma_idturma) VALUES(7,1);
+INSERT INTO Cursinho.aluno_turma(aluno_idaluno,turma_idturma) VALUES(8,2);
+INSERT INTO Cursinho.aluno_turma(aluno_idaluno,turma_idturma) VALUES(9,1);
+INSERT INTO Cursinho.aluno_turma(aluno_idaluno,turma_idturma) VALUES(10,6);
+INSERT INTO Cursinho.aluno_turma(aluno_idaluno,turma_idturma) VALUES(11,6);
+INSERT INTO Cursinho.aluno_turma(aluno_idaluno,turma_idturma) VALUES(12,1);
+INSERT INTO Cursinho.aluno_turma(aluno_idaluno,turma_idturma) VALUES(13,2);
+INSERT INTO Cursinho.aluno_turma(aluno_idaluno,turma_idturma) VALUES(14,2);
+INSERT INTO Cursinho.aluno_turma(aluno_idaluno,turma_idturma) VALUES(15,6);
+INSERT INTO Cursinho.aluno_turma(aluno_idaluno,turma_idturma) VALUES(16,3);
+INSERT INTO Cursinho.aluno_turma(aluno_idaluno,turma_idturma) VALUES(17,5);
+INSERT INTO Cursinho.aluno_turma(aluno_idaluno,turma_idturma) VALUES(18,4);
+INSERT INTO Cursinho.aluno_turma(aluno_idaluno,turma_idturma) VALUES(19,3);
+INSERT INTO Cursinho.aluno_turma(aluno_idaluno,turma_idturma) VALUES(20,1);
 
 #Tabela N pra N entre funcionario e turma
 INSERT INTO Cursinho.funcionario_turma(funcionario_idfuncionario,turma_idturma) VALUES(1,2);
